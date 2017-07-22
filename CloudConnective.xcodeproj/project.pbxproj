@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AD06B05A6E16D8D747CDF4C /* Pods_CloudConnective.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2B4EFAE87BBEE1D0A882F7E /* Pods_CloudConnective.framework */; };
 		FAEB978E1F23EDC300407070 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB978D1F23EDC300407070 /* AppDelegate.swift */; };
 		FAEB97901F23EDC300407070 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB978F1F23EDC300407070 /* ViewController.swift */; };
 		FAEB97931F23EDC300407070 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEB97911F23EDC300407070 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1431E498B831054988615C23 /* Pods-CloudConnective.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudConnective.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudConnective/Pods-CloudConnective.release.xcconfig"; sourceTree = "<group>"; };
+		AA09215D84FD96AAF05DE482 /* Pods-CloudConnective.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudConnective.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudConnective/Pods-CloudConnective.debug.xcconfig"; sourceTree = "<group>"; };
+		C2B4EFAE87BBEE1D0A882F7E /* Pods_CloudConnective.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CloudConnective.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAEB978A1F23EDC300407070 /* CloudConnective.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudConnective.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAEB978D1F23EDC300407070 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAEB978F1F23EDC300407070 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AD06B05A6E16D8D747CDF4C /* Pods_CloudConnective.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2396B4F4AB29BBBAC52596E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA09215D84FD96AAF05DE482 /* Pods-CloudConnective.debug.xcconfig */,
+				1431E498B831054988615C23 /* Pods-CloudConnective.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		67C7678D4C3507DFD59DC1B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2B4EFAE87BBEE1D0A882F7E /* Pods_CloudConnective.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FAEB97811F23EDC300407070 = {
 			isa = PBXGroup;
 			children = (
 				FAEB978C1F23EDC300407070 /* CloudConnective */,
 				FAEB978B1F23EDC300407070 /* Products */,
+				2396B4F4AB29BBBAC52596E1 /* Pods */,
+				67C7678D4C3507DFD59DC1B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAEB979C1F23EDC300407070 /* Build configuration list for PBXNativeTarget "CloudConnective" */;
 			buildPhases = (
+				50F6D772BDA522D70D0BDE1A /* [CP] Check Pods Manifest.lock */,
 				FAEB97861F23EDC300407070 /* Sources */,
 				FAEB97871F23EDC300407070 /* Frameworks */,
 				FAEB97881F23EDC300407070 /* Resources */,
+				56950DDAD08882BFD4EA94AE /* [CP] Embed Pods Frameworks */,
+				448D2349218A53D162DCD598 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		448D2349218A53D162DCD598 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudConnective/Pods-CloudConnective-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50F6D772BDA522D70D0BDE1A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		56950DDAD08882BFD4EA94AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudConnective/Pods-CloudConnective-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAEB97861F23EDC300407070 /* Sources */ = {
@@ -260,6 +335,7 @@
 		};
 		FAEB979D1F23EDC300407070 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA09215D84FD96AAF05DE482 /* Pods-CloudConnective.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CloudConnective/Info.plist;
@@ -272,6 +348,7 @@
 		};
 		FAEB979E1F23EDC300407070 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1431E498B831054988615C23 /* Pods-CloudConnective.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CloudConnective/Info.plist;

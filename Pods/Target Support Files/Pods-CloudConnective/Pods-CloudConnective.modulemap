@@ -1,0 +1,6 @@
+framework module Pods_CloudConnective {
+  umbrella header "Pods-CloudConnective-umbrella.h"
+
+  export *
+  module * { export * }
+}
