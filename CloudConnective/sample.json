@@ -1,0 +1,170 @@
+{
+  "content": [
+    {
+      "id": 1,
+      "name": "CISCO-Server",
+      "ipAddress": "10.10.10.1",
+      "deviceIPSubnetMask": "255.255.255.1",
+      "model": {
+        "id": 1,
+        "name": "3350",
+        "creationDate": 1486549907000,
+        "expiryDate": null
+      },
+      "location": {
+        "id": 1,
+        "name": "Data-Center-Amman",
+        "city": {
+          "id": 1,
+          "name": "Amman",
+          "country": {
+            "id": 2,
+            "name": "Jordan"
+          }
+        },
+        "latitude": 31.945367,
+        "longitude": 35.928372
+      },
+      "status": {
+        "id": 1,
+        "statusValue": "stable",
+        "dangerLevel": {
+          "id": 1,
+          "dangerLevelName": "low",
+          "dangerLevelIntValue": 0,
+          "actionRequired": false
+        }
+      },
+      "type": {
+        "id": 1,
+        "machineTypeName": "ROUTER"
+      },
+      "serialNum": null
+    },
+    {
+      "id": 2,
+      "name": "OpenGear",
+      "ipAddress": "10.10.10.2",
+      "deviceIPSubnetMask": "255.255.255.0",
+      "model": {
+        "id": 2,
+        "name": "opengear 2016",
+        "creationDate": 1486490400000,
+        "expiryDate": null
+      },
+      "location": {
+        "id": 2,
+        "name": "Data-Center-NY",
+        "city": {
+          "id": 2,
+          "name": "NewYork",
+          "country": {
+            "id": 1,
+            "name": "US"
+          }
+        },
+        "latitude": 40.919739,
+        "longitude": -74.998169
+      },
+      "status": {
+        "id": 3,
+        "statusValue": "is about to go down",
+        "dangerLevel": {
+          "id": 3,
+          "dangerLevelName": "high",
+          "dangerLevelIntValue": 2,
+          "actionRequired": true
+        }
+      },
+      "type": {
+        "id": 2,
+        "machineTypeName": "SWITCH"
+      },
+      "serialNum": null
+    },
+    {
+      "id": 3,
+      "name": "CISCO-Server",
+      "ipAddress": "10.10.10.3",
+      "deviceIPSubnetMask": "255.255.255.0",
+      "model": {
+        "id": 1,
+        "name": "3350",
+        "creationDate": 1486549907000,
+        "expiryDate": null
+      },
+      "location": {
+        "id": 3,
+        "name": "Data-Center-Krakow",
+        "city": {
+          "id": 3,
+          "name": "Krakow",
+          "country": {
+            "id": 4,
+            "name": "Poland"
+          }
+        },
+        "latitude": 50.06465,
+        "longitude": 19.94498
+      },
+      "status": {
+        "id": 2,
+        "statusValue": "is having a problem",
+        "dangerLevel": {
+          "id": 2,
+          "dangerLevelName": "minor",
+          "dangerLevelIntValue": 1,
+          "actionRequired": false
+        }
+      },
+      "type": null,
+      "serialNum": null
+    },
+    {
+      "id": 4,
+      "name": "CISCO-Server",
+      "ipAddress": "10.10.10.4",
+      "deviceIPSubnetMask": "255.255.255.0",
+      "model": {
+        "id": 1,
+        "name": "3350",
+        "creationDate": 1486549907000,
+        "expiryDate": null
+      },
+      "location": {
+        "id": 4,
+        "name": "Data-Center-London",
+        "city": {
+          "id": 4,
+          "name": "London",
+          "country": {
+            "id": 3,
+            "name": "UK"
+          }
+        },
+        "latitude": 51.507351,
+        "longitude": -0.127758
+      },
+      "status": {
+        "id": 4,
+        "statusValue": "down",
+        "dangerLevel": {
+          "id": 4,
+          "dangerLevelName": "urgent",
+          "dangerLevelIntValue": 3,
+          "actionRequired": true
+        }
+      },
+      "type": null,
+      "serialNum": null
+    }
+  ],
+  "totalPages": 1,
+  "totalElements": 4,
+  "last": true,
+  "numberOfElements": 4,
+  "sort": null,
+  "first": true,
+  "size": 10,
+  "number": 0
+}
