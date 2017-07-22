@@ -16,6 +16,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var segementsView: Segmentio!
     @IBOutlet weak var avatarImage: UIImageView!
     
+    var servers = [Server]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,6 +33,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Using Segmant view
         SegmantBuilder.buildSegmentioView(segmentioView: segementsView)
         segementsView.selectedSegmentioIndex = 4
+        
+        self.servers = DataMaanger.loadServers()
 
     }
     
@@ -43,7 +47,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return self.servers.count + 1
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -57,12 +61,59 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "serverListCell", for: indexPath)
-        return cell
+        if indexPath.row < self.servers.count {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "serverListCell", for: indexPath) as! ServerListTableViewCustomCell
+            let server = servers[indexPath.row]
+            
+            if let serverName = server.name {
+                cell.serverName.text = serverName
+            } else {
+                cell.serverName.text = "N/A"
+            }
+            
+            if let serverSerial = server.serial {
+                cell.serialValue.text = serverSerial
+            } else {
+                cell.serialValue.text = "N/A"
+            }
+            
+            if let serverModel = server.model {
+                cell.modelValue.text = serverModel
+            } else {
+                cell.modelValue.text = "N/A"
+            }
+            
+            if let serverExpires = server.expires {
+                let date = NSDate(timeIntervalSince1970: Double(serverExpires))
+                let formatter           = DateFormatter()
+                formatter.dateFormat    = "dd/MM/YYYY"
+                let dateFormatted       = formatter.string(from: date as Date)
+                cell.expiresValue.text  = "\(dateFormatted)"
+            } else {
+                cell.expiresValue.text = "N/A"
+            }
+            
+            if let serverStatus = server.status {
+                cell.statusValue.text = serverStatus
+            } else {
+                cell.statusValue.text = "N/A"
+            }
+            
+            if let serverStatusID = server.statusId {
+                if serverStatusID == 1 {
+                    cell.statueImage.image = UIImage(named: "stable")
+                } else {
+                    cell.statueImage.image = UIImage(named: "down")
+                }
+            } else {
+                cell.statueImage.image = UIImage(named: "")
+            }
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "separatorCell", for: indexPath)
+            return cell
+        }
     }
-
-
-
 
 }
 

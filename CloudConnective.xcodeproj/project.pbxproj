@@ -88,19 +88,67 @@
 		FAEB978C1F23EDC300407070 /* CloudConnective */ = {
 			isa = PBXGroup;
 			children = (
+				FAEB97AB1F2412B700407070 /* Model */,
+				FAEB97AC1F2412CA00407070 /* View */,
+				FAEB97AD1F2412D700407070 /* Controller */,
+				FAEB97AE1F2412DF00407070 /* Managers */,
+				FAEB97B01F2412FF00407070 /* CustomCells */,
+				FAEB97AF1F2412EF00407070 /* Helpers */,
 				FAEB978D1F23EDC300407070 /* AppDelegate.swift */,
-				FAEB97A91F240D0E00407070 /* DataManager.swift */,
-				FAEB978F1F23EDC300407070 /* ViewController.swift */,
-				FAEB979F1F2401C400407070 /* SegemantBuilder.swift */,
-				FAEB97911F23EDC300407070 /* Main.storyboard */,
 				FAEB97941F23EDC300407070 /* Assets.xcassets */,
 				FAEB97961F23EDC300407070 /* LaunchScreen.storyboard */,
 				FAEB97991F23EDC300407070 /* Info.plist */,
-				FAEB97A11F2406F200407070 /* ServerListTableViewCustomCell.swift */,
 				FAEB97A31F2408F300407070 /* sample.json */,
-				FAEB97A71F240B5F00407070 /* Server.swift */,
 			);
 			path = CloudConnective;
+			sourceTree = "<group>";
+		};
+		FAEB97AB1F2412B700407070 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAEB97A71F240B5F00407070 /* Server.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FAEB97AC1F2412CA00407070 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAEB97911F23EDC300407070 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FAEB97AD1F2412D700407070 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FAEB978F1F23EDC300407070 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		FAEB97AE1F2412DF00407070 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FAEB97A91F240D0E00407070 /* DataManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		FAEB97AF1F2412EF00407070 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FAEB979F1F2401C400407070 /* SegemantBuilder.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		FAEB97B01F2412FF00407070 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				FAEB97A11F2406F200407070 /* ServerListTableViewCustomCell.swift */,
+			);
+			name = CustomCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
