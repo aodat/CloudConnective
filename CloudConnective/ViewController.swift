@@ -7,19 +7,28 @@
 //
 
 import UIKit
+import Segmentio
+import Floaty
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var segementsView: Segmentio!
+    @IBOutlet weak var avatarImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+        
+        // Floating button on bottom right
+        let floaty = Floaty()
+        floaty.addItem("Hello Kiswani", icon: UIImage(named: "back")!)
+        self.view.addSubview(floaty)
+        
+        // Round avatar image
+        self.avatarImage.layer.cornerRadius = avatarImage.frame.height/2
+        self.avatarImage.clipsToBounds = true
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
 
 }
 

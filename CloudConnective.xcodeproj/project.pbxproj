@@ -13,6 +13,7 @@
 		FAEB97931F23EDC300407070 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEB97911F23EDC300407070 /* Main.storyboard */; };
 		FAEB97951F23EDC300407070 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAEB97941F23EDC300407070 /* Assets.xcassets */; };
 		FAEB97981F23EDC300407070 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEB97961F23EDC300407070 /* LaunchScreen.storyboard */; };
+		FAEB97A01F2401C400407070 /* SegemantBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB979F1F2401C400407070 /* SegemantBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FAEB97941F23EDC300407070 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAEB97971F23EDC300407070 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAEB97991F23EDC300407070 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAEB979F1F2401C400407070 /* SegemantBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegemantBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			children = (
 				FAEB978D1F23EDC300407070 /* AppDelegate.swift */,
 				FAEB978F1F23EDC300407070 /* ViewController.swift */,
+				FAEB979F1F2401C400407070 /* SegemantBuilder.swift */,
 				FAEB97911F23EDC300407070 /* Main.storyboard */,
 				FAEB97941F23EDC300407070 /* Assets.xcassets */,
 				FAEB97961F23EDC300407070 /* LaunchScreen.storyboard */,
@@ -212,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAEB97901F23EDC300407070 /* ViewController.swift in Sources */,
+				FAEB97A01F2401C400407070 /* SegemantBuilder.swift in Sources */,
 				FAEB978E1F23EDC300407070 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
