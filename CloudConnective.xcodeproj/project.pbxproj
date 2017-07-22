@@ -378,6 +378,7 @@
 				FAEB979E1F23EDC300407070 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
