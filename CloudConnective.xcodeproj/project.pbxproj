@@ -14,6 +14,7 @@
 		FAEB97951F23EDC300407070 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAEB97941F23EDC300407070 /* Assets.xcassets */; };
 		FAEB97981F23EDC300407070 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEB97961F23EDC300407070 /* LaunchScreen.storyboard */; };
 		FAEB97A01F2401C400407070 /* SegemantBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB979F1F2401C400407070 /* SegemantBuilder.swift */; };
+		FAEB97A21F2406F200407070 /* ServerListTableViewCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB97A11F2406F200407070 /* ServerListTableViewCustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		FAEB97971F23EDC300407070 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAEB97991F23EDC300407070 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAEB979F1F2401C400407070 /* SegemantBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegemantBuilder.swift; sourceTree = "<group>"; };
+		FAEB97A11F2406F200407070 /* ServerListTableViewCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerListTableViewCustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				FAEB97941F23EDC300407070 /* Assets.xcassets */,
 				FAEB97961F23EDC300407070 /* LaunchScreen.storyboard */,
 				FAEB97991F23EDC300407070 /* Info.plist */,
+				FAEB97A11F2406F200407070 /* ServerListTableViewCustomCell.swift */,
 			);
 			path = CloudConnective;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				FAEB97901F23EDC300407070 /* ViewController.swift in Sources */,
 				FAEB97A01F2401C400407070 /* SegemantBuilder.swift in Sources */,
 				FAEB978E1F23EDC300407070 /* AppDelegate.swift in Sources */,
+				FAEB97A21F2406F200407070 /* ServerListTableViewCustomCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
