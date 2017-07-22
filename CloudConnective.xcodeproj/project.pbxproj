@@ -17,6 +17,7 @@
 		FAEB97A21F2406F200407070 /* ServerListTableViewCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB97A11F2406F200407070 /* ServerListTableViewCustomCell.swift */; };
 		FAEB97A41F2408F300407070 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = FAEB97A31F2408F300407070 /* sample.json */; };
 		FAEB97A81F240B5F00407070 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB97A71F240B5F00407070 /* Server.swift */; };
+		FAEB97AA1F240D0E00407070 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEB97A91F240D0E00407070 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,8 +34,8 @@
 		FAEB979F1F2401C400407070 /* SegemantBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegemantBuilder.swift; sourceTree = "<group>"; };
 		FAEB97A11F2406F200407070 /* ServerListTableViewCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerListTableViewCustomCell.swift; sourceTree = "<group>"; };
 		FAEB97A31F2408F300407070 /* sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
-		FAEB97A51F24092100407070 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		FAEB97A71F240B5F00407070 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		FAEB97A91F240D0E00407070 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				FAEB978D1F23EDC300407070 /* AppDelegate.swift */,
+				FAEB97A91F240D0E00407070 /* DataManager.swift */,
 				FAEB978F1F23EDC300407070 /* ViewController.swift */,
 				FAEB979F1F2401C400407070 /* SegemantBuilder.swift */,
 				FAEB97911F23EDC300407070 /* Main.storyboard */,
@@ -96,7 +98,6 @@
 				FAEB97991F23EDC300407070 /* Info.plist */,
 				FAEB97A11F2406F200407070 /* ServerListTableViewCustomCell.swift */,
 				FAEB97A31F2408F300407070 /* sample.json */,
-				FAEB97A51F24092100407070 /* DataManager.swift */,
 				FAEB97A71F240B5F00407070 /* Server.swift */,
 			);
 			path = CloudConnective;
@@ -227,7 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAEB97901F23EDC300407070 /* ViewController.swift in Sources */,
-				FAEB97A61F24092100407070 /* DataManager.swift in Sources */,
+				FAEB97AA1F240D0E00407070 /* DataManager.swift in Sources */,
 				FAEB97A01F2401C400407070 /* SegemantBuilder.swift in Sources */,
 				FAEB978E1F23EDC300407070 /* AppDelegate.swift in Sources */,
 				FAEB97A81F240B5F00407070 /* Server.swift in Sources */,
